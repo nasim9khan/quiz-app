@@ -1,14 +1,15 @@
-* {
+
+*{
   background: rgb(45, 45, 45);
   box-sizing: border-box;
-  width: 100vh;
+  width: 100%;
   margin: 0 auto;
-  color: aliceblue;
+ 
 }
 .container {
-  color: rgb(117, 182, 246);
+  color: rgb(168, 171, 174);
   max-width: 760px;
-  justify-content: center;
+ 
   text-align: center;
 }
 .container h1 {
@@ -22,18 +23,18 @@
 }
 
 #options {
-  justify-content: center;
   margin-top: 20px;
-  border-radius: 10px;
+  
 }
 
 #options button {
   color: rgb(117, 186, 246);
-  margin: 10px;
+  margin: 10px 0;
   padding: 1rem 0.1rem;
   transition: 0.5s;
   cursor: pointer;
   font-size: 20px;
+  border-radius: 10px;
 }
 #options button:hover {
   color: aliceblue;
@@ -41,18 +42,17 @@
 }
 
 #next-btn {
-  width: 30%;
-  justify-content: center;
+  margin-top: 20px;
+  width: fit-content;
+  background: #000;
   font-size: 2em;
-  background:black;
-  margin-top: 40px;
-  text-transform: uppercase;
-  display: none;
-  /* width: auto; */
-}
-#next-btn:hover {
-  background-color: rgb(222, 42, 21);
-}
+  padding: 10px;
+  border-radius: 10px;
+  }
+  #next-btn:hover{
+    background-color: rgb(114, 8, 8);
+    cursor: pointer;
+  }
 #options button.correct {
   background-color: green;
   color: white;
@@ -61,4 +61,24 @@
 #options button.incorrect {
   background-color: red;
   color: white;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+  }
+
+  #question h2 {
+    font-size: 1rem;
+  }
+
+  #options button {
+    font-size: 0.9rem;
+  }
+
+  
 }
